@@ -11,7 +11,6 @@ class WeatherEffect(QWidget):
         self.timer = QTimer(self)
         self.timer.timeout.connect(self.animate)
         self.timer.start(50)
-        self.initParticles()
 
     def initParticles(self):
         w, h = self.width() or 800, self.height() or 600
@@ -32,7 +31,7 @@ class WeatherEffect(QWidget):
             self.particles = [(x + random.uniform(-0.8, 0.8), y + 2)
                               if y < h else (random.randint(0, w), -10) for x, y in self.particles]
         elif self.effect == "cloudy":
-            self.particles = [((x + random.uniform(0.1, 0.3)) % w,
+            self.particles = [((x + random.uniform(0.1, 0.3)) % w, 
                        (y + random.uniform(-0.1, 0.1)) % h) for x, y in self.particles]
         self.update()
 
@@ -42,6 +41,7 @@ class WeatherEffect(QWidget):
         painter = QPainter(self)
         painter.setOpacity(0.7)
         painter.setRenderHint(QPainter.RenderHint.Antialiasing)
+
         if self.effect == "rain":
             painter.setPen(QColor(180, 220, 250, 200))
             for x, y in self.particles:
@@ -70,3 +70,7 @@ class WeatherEffect(QWidget):
                 x2, y2 = 80 + 70 * math.cos(rad), 80 + 70 * math.sin(rad)
                 painter.setPen(QColor(255, 255, 200, 180))
                 painter.drawLine(int(x1), int(y1), int(x2), int(y2))
+
+    def showEvent(self, event):
+        super().showEvent(event)
+        self.initParticles()
