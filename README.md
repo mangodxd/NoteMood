@@ -31,8 +31,6 @@ NoteMood_Pro/
 ├── assets/
 │   ├── NoteMood_Icon.ico
 │   ├── NoteMood_Icon.png
-├── dist/
-│   └── NoteMood.exe
 └── docs/
 ```
 
@@ -41,4 +39,5 @@ NoteMood_Pro/
 - Tự động lưu 2 phút/lần nếu có thay đổi.
 
 ## Đóng gói
-- Đã build thử file thực thi tại `dist/`.
+- Đã build thử file thực thi tại `[here](https://github.com/mangodxd/NoteMood/releases/tag/v0.1.0)`.
+
