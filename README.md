@@ -34,11 +34,21 @@ NoteMood_Pro/
 └── docs/
 ```
 
+# Mood
+
+| Mood       | Hình ảnh |
+|-----------|----------|
+| Calm      | ![Calm](assets/calm.png) |
+| Sleepy    | ![Sleepy](assets/sleepy.png) |
+| Focus     | ![Focus](assets/focus.png) |
+| Creative  | ![Creative](assets/creative.png) |
+
 ## Ghi chú
 - Mặc định nhạc tải từ Internet, có thể chọn nhạc thủ công.
 - Tự động lưu 2 phút/lần nếu có thay đổi.
 
 ## Đóng gói
 - Đã build thử file thực thi tại [here](https://github.com/mangodxd/NoteMood/releases/tag/v0.1.0).
+
 
 
