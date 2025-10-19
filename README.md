@@ -39,5 +39,6 @@ NoteMood_Pro/
 - Tự động lưu 2 phút/lần nếu có thay đổi.
 
 ## Đóng gói
-- Đã build thử file thực thi tại `[here](https://github.com/mangodxd/NoteMood/releases/tag/v0.1.0)`.
+- Đã build thử file thực thi tại [here](https://github.com/mangodxd/NoteMood/releases/tag/v0.1.0).
+
 
